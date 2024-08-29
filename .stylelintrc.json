@@ -1,0 +1,74 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "extends",
+        "tailwind",
+        "apply",
+        "variants",
+        "responsive",
+        "screen"
+      ]
+    }],
+    "block-no-empty": null,
+    "property-no-unknown": [true, {
+      "ignoreProperties": [
+        "composes"
+      ]
+    }],
+    "selector-class-pattern": null,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "at-rules",
+      "rules"
+    ],
+"order/properties-order": [
+  "display",
+  "position",
+  "top",
+  "right",
+  "bottom",
+  "left",
+  "float",
+  "clear",
+  "overflow",
+  "box-sizing",
+  "width",
+  "min-width",
+  "max-width",
+  "height",
+  "min-height",
+  "max-height",
+  "padding",
+  "margin",
+  "border",
+  "border-radius",
+  "font-family",
+  "font-size",
+  "font-weight",
+  "font-style",
+  "line-height",
+  "text-align",
+  "text-decoration",
+  "text-transform",
+  "color",
+  "background",
+  "opacity",
+  "visibility",
+  "box-shadow",
+  "z-index",
+  "cursor",
+  "transition",
+  "animation"
+]
+
+  }
+}
